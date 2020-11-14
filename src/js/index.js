@@ -54,3 +54,12 @@ consoleText(
   "text",
   ["tomato", "#f09ea3", "lightblue"]
 );
+const aboutMe = document.querySelector(".about-me-block");
+
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".main-scroll-btn"))
+    aboutMe.scrollIntoView({
+      block: "center",
+      behavior: "smooth",
+    });
+});

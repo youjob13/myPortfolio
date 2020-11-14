@@ -5,7 +5,7 @@ body {
     font-family: 'Exo',
     sans-serif;
     color: #fff;
-    background-color:#698280;
+    overflow-x: hidden;
 }
 * {
     box-sizing: border-box;
@@ -39,16 +39,25 @@ a {
 }
 //section setting
 .section {
-    padding: 50px 0;
+    padding: 150px 0;
     &-title {
         text-align: center;
         font-size: 40px;
     }
+    &-about-me {
+        height: 100vh;
+        display: flex;
+        background-color:lightblue;
+    }
+     &-my-projects {
+         background-color:#F99E6B;
+     }
 }
 //Main
 .main {
     background-color:#39383f;
     height: 100vh;
+    position: relative;
     &-title {
         display: flex;
         align-items: center;
@@ -56,6 +65,27 @@ a {
         color: #fff;
         font-family: 'Monoton',
         cursive;
+    }
+    &-scroll-btn {
+        position: absolute;
+        cursor: pointer;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 11;
+        font-size: 30px;
+       
+        &::before {
+           content: '';
+           z-index: 111;
+           position: absolute;
+           width: 40px;
+           height: 40px;
+           border: 2px solid #fff;
+           left: -100%;
+           border-radius: 50%;
+           
+        }
     }
 }
 //text being typed
@@ -175,8 +205,3 @@ a {
         grid-template-columns: 1fr 1fr;
     }
 }
-
-// @media (min-width: 960px) {
-//     .my-projects-item {
-//     }
-// }
