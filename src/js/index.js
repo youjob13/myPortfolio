@@ -54,7 +54,7 @@ consoleText(
   "text",
   ["tomato", "#f09ea3", "lightblue"]
 );
-const aboutMe = document.querySelector(".about-me-block");
+const aboutMe = document.querySelector(".section-about-me");
 
 document.addEventListener("click", (e) => {
   if (e.target.closest(".main-scroll-btn"))

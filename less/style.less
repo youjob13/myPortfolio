@@ -45,8 +45,12 @@ a {
         font-size: 40px;
     }
     &-about-me {
+        position: relative;
+        padding: 0;
+        overflow: hidden;
         height: 100vh;
         display: flex;
+        align-items: center;
         background-color:lightblue;
     }
      &-my-projects {
@@ -119,9 +123,13 @@ a {
     &-block {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
     &-title {
-        margin: auto;
+        background-color: lightblue;
+        z-index: 11;
+        margin: 0 auto;
+        padding:15px;
     }
 }
 //my project's
@@ -199,9 +207,22 @@ a {
     transform: translate3d(-100%, 0, 0);
     transition: transform .4s cubic-bezier(.33, .02, 0, .93) .2s;
 }
-
+.rellax-block {
+    color:gray;
+    height: 0;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
 @media (max-width: 768px) {
     .my-projects-wrap {
         grid-template-columns: 1fr 1fr;
     }
+}
+.one {
+    color:rgb(81, 81, 199);
+}
+.null {
+    color: rgb(190, 120, 120);
 }
