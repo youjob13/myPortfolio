@@ -246,10 +246,11 @@ a {
 .null {
     color: rgb(190, 120, 120);
 }
+//footer
 .footer {
     position: relative;
     background-color:lightblue;
-    min-height: 400px;
+    min-height: 60vh;
 }
 .form {
     z-index: 1111;
@@ -266,7 +267,7 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-100%);
-    bottom: 40px;
+    bottom: 6%;
     h2 {
         margin: 10px 0;
         padding-bottom: 10px;
@@ -331,6 +332,9 @@ a {
 }
 //media
 @media (max-width: 768px) {
+    .console-container {
+        font-size: 2em;
+    }
     .about-me-block {
         grid-template-columns: 1fr;
     }
@@ -343,17 +347,17 @@ a {
             width: 60%;
         }
     }
-  
-
     .form {
+        bottom: 33%;
         left: 50%;
         transform: translateX(-50%);
         width: 240px;
-        height: 340px;
+        height: 320px;
         div {
             display: none;
         }
         button {
+            float: none;
             margin-top: 20px;
         }
     }
