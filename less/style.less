@@ -247,15 +247,11 @@ a {
 .null {
     color: rgb(190, 120, 120);
 }
-//media
-@media (max-width: 768px) {
-    .my-projects-wrap {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 .footer {
+    position: relative;
     background-color:lightblue;
+    min-height: 400px;
 }
 .form {
     z-index: 1111;
@@ -269,7 +265,7 @@ a {
     box-sizing: border-box;
     font-family: Montserrat,
     sans-serif;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-100%);
     bottom: 40px;
@@ -334,6 +330,26 @@ a {
     span {
         margin: 0 5px 0 15px;
     }
+}
+//media
+@media (max-width: 768px) {
+    .my-projects-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 240px;
+        height: 340px;
+        div {
+            display: none;
+        }
+        button {
+            margin-top: 20px;
+        }
+    }
+
 }
 
 
