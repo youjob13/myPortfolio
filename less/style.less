@@ -211,6 +211,7 @@ a {
 .my-certificates {
     &-block {
         margin-top: 50px;
+        overflow-y: hidden;
     }
     &-list {
         display: flex;
@@ -228,9 +229,6 @@ a {
         }
     }
 }
-
-
-
 //parallax
 .rellax-block {
     color:gray;
@@ -335,8 +333,9 @@ a {
     .console-container {
         font-size: 2em;
     }
-    .about-me-block {
-        grid-template-columns: 1fr;
+    .about-me {
+        &-block {grid-template-columns: 1fr;}
+        &-title {margin: 0 40px;}
     }
     .my-projects-wrap {
         display: flex;
@@ -357,11 +356,11 @@ a {
             display: none;
         }
         button {
+            background-color:white;
             float: none;
             margin-top: 20px;
         }
     }
-
 }
 
 
