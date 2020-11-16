@@ -15,6 +15,7 @@
       type="text/css"
       href="./wow-animation/animate.min.css"
     />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link rel="stylesheet" href="css/style.min.css" />
     <title>My Portfolio</title>
   </head>
@@ -206,18 +207,18 @@
     </section>
     <!-- Contacts -->
     <footer class="footer">
-      <form class="form" action="send.php" >
+      <form class="form pageclip-form" action="https://send.pageclip.co/HYP9i4SWvq6TPegawN6fZA81tbYCVHvK" method="POST">
         <h2>CONTACT ME</h2>
         <p type="Name:">
-          <input required placeholder="Write your name here.." />
+          <input name="name" required placeholder="Write your name here.." />
         </p>
         <p type="Email:">
-          <input mailto required placeholder="Let us know how to contact you back.." />
+          <input name="email" mailto required placeholder="Let us know how to contact you back.." />
         </p>
-        <p type="Message:">
-          <input required placeholder="What would you like to tell us.." />
-        </p>
-        <button>Send Message</button>
+        <!-- <p type="Message:">
+          <input name="message" required placeholder="What would you like to tell us.." />
+        </p> -->
+        <button class="pageclip-form__submit" type="submit">Send Message</button>
         <div>
           <span class="fa fa-phone"></span>89372468050
           <span class="fa fa-envelope-o"></span> danil.rodionow13@gmail.com
@@ -225,8 +226,8 @@
       </form>
     </footer>
 
-
     <!-- Script's -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script src="https://kit.fontawesome.com/329d79938d.js" crossorigin="anonymous"></script>
     <script src="./wow-animation/wow.min.js"></script>
     <script src="src/js/rellax.min.js"></script>
