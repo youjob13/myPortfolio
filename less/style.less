@@ -243,11 +243,9 @@ a {
 .one {
     color: rgb(81, 81, 199);
 }
-
 .null {
     color: rgb(190, 120, 120);
 }
-
 .footer {
     position: relative;
     background-color:lightblue;
@@ -333,9 +331,19 @@ a {
 }
 //media
 @media (max-width: 768px) {
-    .my-projects-wrap {
-        grid-template-columns: 1fr 1fr;
+    .about-me-block {
+        grid-template-columns: 1fr;
     }
+    .my-projects-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        li {
+            width: 60%;
+        }
+    }
+  
 
     .form {
         left: 50%;
