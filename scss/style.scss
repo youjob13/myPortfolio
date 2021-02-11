@@ -3,13 +3,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Exo',
-    sans-serif;
+        sans-serif;
     color: #fff;
     overflow-x: hidden;
 }
+
 * {
     box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -19,31 +21,38 @@ h6,
 ul,
 li,
 p,
-span{
+span {
     margin: 0;
     padding: 0;
 }
+
 li {
     list-style-type: none;
 }
+
 a {
     color: #fff;
     text-decoration: none;
+
     &:focus {
         outline: none;
     }
 }
+
 .container {
     margin: auto;
     max-width: 1200px;
 }
+
 //section setting
 .section {
     padding: 150px 0;
+
     &-title {
         text-align: center;
         font-size: 40px;
     }
+
     &-about-me {
         position: relative;
         padding: 0;
@@ -51,29 +60,34 @@ a {
         height: 100vh;
         display: flex;
         align-items: center;
-        background-color:lightblue;
+        background-color: lightblue;
     }
-     &-my-projects {
+
+    &-my-projects {
         overflow: hidden;
-        background-color:#F99E6B;
-     }
-     &-my-certificates {
-        background-color:#6bb4f9;
-     }
+        background-color: #F99E6B;
+    }
+
+    &-my-certificates {
+        background-color: #6bb4f9;
+    }
 }
+
 //Main
 .main {
-    background-color:#39383f;
+    background-color: #39383f;
     height: 100vh;
     position: relative;
+
     &-title {
         display: flex;
         align-items: center;
         font-size: 70px;
         color: #fff;
         font-family: 'Monoton',
-        cursive;
+            cursive;
     }
+
     &-scroll-btn {
         position: absolute;
         cursor: pointer;
@@ -82,24 +96,26 @@ a {
         transform: translateX(-50%);
         z-index: 11;
         font-size: 30px;
-       
+
         &::before {
-           content: '';
-           z-index: 111;
-           position: absolute;
-           width: 40px;
-           height: 40px;
-           border: 2px solid #fff;
-           left: -100%;
-           border-radius: 50%;
-           
+            content: '';
+            z-index: 111;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #fff;
+            left: -100%;
+            border-radius: 50%;
+
         }
     }
 }
+
 //text being typed
 .hidden {
     opacity: 0;
 }
+
 .console-container {
     font-size: 4em;
     text-align: center;
@@ -113,12 +129,14 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 .console-underscore {
     display: inline-block;
     position: relative;
     top: -0.14em;
     left: 10px;
 }
+
 //about me
 .about-me {
     &-block {
@@ -126,53 +144,66 @@ a {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
+
     &-title {
         background-color: lightblue;
         z-index: 11;
         margin: 0 auto;
-        padding:15px;
+        padding: 15px;
+        text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
     }
 }
+
 //my project's
 .my-projects {
     &-title {
         margin-bottom: 50px;
-    }
+        text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
+        }
+
     &-wrap {
         max-width: 1120px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     &-item {
         padding: 10px;
         &_wrap {
             overflow: hidden;
             position: relative;
+            height: 400px;
         }
+
         img {
             display: block;
             width: 100%;
         }
+
         &:hover .text-wrapper {
             transform: translate3d(0, 0, 0);
             transition: transform .5s cubic-bezier(.33, .02, 0, .93) .3s;
         }
+
         &:hover .overlay {
             transform: translate3d(0, 0, 0);
             transition: transform .5s cubic-bezier(.33, .02, 0, .93);
         }
     }
+
     &-link {
         text-decoration: none;
         display: block;
     }
+
     &-cat {
         text-transform: uppercase;
         margin-bottom: 5px;
         color: #000200;
         font-weight: 500;
     }
+
     &-text {
         font-size: 12px;
         font-weight: 400;
@@ -180,6 +211,7 @@ a {
         font-style: italic;
     }
 }
+
 //my project's animation
 .text-wrapper {
     position: absolute;
@@ -196,6 +228,7 @@ a {
     transform: translate3d(-100%, 0, 0);
     transition: transform .5s cubic-bezier(.33, .02, 0, .93);
 }
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -207,21 +240,29 @@ a {
     transform: translate3d(-100%, 0, 0);
     transition: transform .4s cubic-bezier(.33, .02, 0, .93) .2s;
 }
+
 //my certificates
 .my-certificates {
+    &-title {
+        text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
+
+    }
     &-block {
         margin-top: 50px;
         overflow-y: hidden;
-    }
+        }
+
     &-list {
         display: flex;
         justify-content: center;
         text-align: center;
         width: 100%;
     }
+
     &-item {
         width: 30%;
         padding: 0 15px;
+
         // margin: 0 15px;
         img {
             margin-bottom: 15px;
@@ -229,27 +270,32 @@ a {
         }
     }
 }
+
 //parallax
 .rellax-block {
-    color:gray;
+    color: gray;
     height: 0;
     font-size: 35px;
     display: flex;
     justify-content: space-between;
     z-index: -1;
 }
+
 .one {
     color: rgb(81, 81, 199);
 }
+
 .null {
     color: rgb(190, 120, 120);
 }
+
 //footer
 .footer {
     position: relative;
-    background-color:lightblue;
+    background-color: lightblue;
     min-height: 60vh;
 }
+
 .form {
     z-index: 1111;
     width: 340px;
@@ -261,11 +307,12 @@ a {
     max-width: calc(60vw);
     box-sizing: border-box;
     font-family: Montserrat,
-    sans-serif;
+        sans-serif;
     position: absolute;
     left: 50%;
     transform: translateX(-100%);
     bottom: 6%;
+
     h2 {
         margin: 10px 0;
         padding-bottom: 10px;
@@ -273,6 +320,7 @@ a {
         color: #78788c;
         border-bottom: 3px solid #78788c;
     }
+
     input {
         width: 100%;
         padding: 10px;
@@ -284,10 +332,12 @@ a {
         font-family: 'Montserrat', sans-serif;
         transition: all .3s;
         border-bottom: 2px solid #bebed2;
+
         &:focus {
             border-bottom: 2px solid #78788c;
         }
     }
+
     p:before {
         content: attr(type);
         display: block;
@@ -295,6 +345,7 @@ a {
         font-size: 14px;
         color: #5a5a5a;
     }
+
     button {
         float: right;
         padding: 8px 12px;
@@ -305,72 +356,81 @@ a {
         color: #5a5a6e;
         cursor: pointer;
         transition: all .3s;
+
         &:hover {
             background: #78788c;
             color: #fff;
         }
     }
+
     div {
-       content: 'Hi';
-       display: flex;
-       position: absolute;
-       bottom: -15px;
-       right: -33px;
-       background: #50505a;
-       color: #fff;
-       width: 354px;
-       padding: 16px 4px 16px 0;
-       border-radius: 6px;
-       font-size: 13px;
-       box-shadow: 10px 10px 40px -14px #000
+        content: 'Hi';
+        display: flex;
+        position: absolute;
+        bottom: -15px;
+        right: -33px;
+        background: #50505a;
+        color: #fff;
+        width: 354px;
+        padding: 16px 4px 16px 0;
+        border-radius: 6px;
+        font-size: 13px;
+        box-shadow: 10px 10px 40px -14px #000
     }
+
     span {
         margin: 0 5px 0 15px;
     }
 }
+
 .link {
     margin-top: 20px;
     font-style: italic;
-    border-bottom:2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
+
 //media
 @media (max-width: 768px) {
     .console-container {
         font-size: 2em;
     }
+
     .about-me {
-        &-block {grid-template-columns: 1fr;}
-        &-title {margin: 0 40px;}
+        &-block {
+            grid-template-columns: 1fr;
+        }
+
+        &-title {
+            margin: 0 40px;
+        }
     }
+
     .my-projects-wrap {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+
         li {
             width: 60%;
         }
     }
+
     .form {
         bottom: 33%;
         left: 50%;
         transform: translateX(-50%);
         width: 240px;
         height: 320px;
+
         div {
             display: none;
         }
+
         button {
-            background-color:white;
+            background-color: white;
             float: none;
             margin-top: 20px;
         }
     }
 }
-
-
-
-
-
-
-

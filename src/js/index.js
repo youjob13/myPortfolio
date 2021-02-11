@@ -63,23 +63,3 @@ document.addEventListener("click", (e) => {
       behavior: "smooth",
     });
 });
-
-// // Setup
-// function countup(n,m) {
-//   if (n !== m) {
-//     const countArray = countup(n++);
-//     countArray.unshift(n);
-//     return countArray;
-//   }
-// }
-// console.log(countup(1,5));
-// function rangeOfNumbers(startNum, endNum) {
-//   if (startNum < endNum) {
-//     const arr = rangeOfNumbers(startNum++);
-//     arr.push(startNum);
-//     return arr;
-//   } else if (startNum === endNum) {
-//     return [startNum];
-//   }
-// }
-// console.log(rangeOfNumbers(1, 3));
